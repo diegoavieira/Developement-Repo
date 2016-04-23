@@ -15,6 +15,7 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 
 define( 'WP_MEMORY_LIMIT', '96M');
 
+
 // ========================
 // Custom Content Directory
 // ========================
@@ -26,6 +27,7 @@ define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp_developement/
 // ================================================
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
+define('FS_METHOD','direct');
 
 // ==============================================================
 // Salts, for security
